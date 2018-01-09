@@ -1,0 +1,16 @@
+﻿@model SpacePlanner.Models.Fuel
+
+@{
+    ViewData["Title"] = "Fuel Requirements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Fuel Requirements</h2>
+<hr>
+
+<h3>Final Desired Speed: @Model.GetFinalSpeed()m/h</h3>
+<h3>Dry Rocket Weight: @Model.GetRocketWeight()kg</h3>
+<hr>
+
+<h2>Weigh of Fuel: @Model.GetFuelWeight() kg</h2>
+<br>
+@Html.ActionLink("Back to List", "Index")

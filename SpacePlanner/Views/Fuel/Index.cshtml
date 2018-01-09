@@ -1,0 +1,21 @@
+﻿@model SpacePlanner.Models.Fuel
+
+@{
+    ViewData["Title"] = "Fuel Requirements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Fuel Requirements</h2>
+<hr>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.FinalSpeed) 
+    @Html.EditorFor(model => model.FinalSpeed)
+
+    @Html.LabelFor(model => model.RocketWeight)
+    @Html.EditorFor(model => model.RocketWeight)
+
+    <input type="submit" value="Calculate" class="btn btn-default" />
+}
+
+@Html.ActionLink("Back to List", "Index")

@@ -27,7 +27,16 @@ namespace SpacePlanner.Models
             double astronauts = (Convert.ToDouble(Tasks) /Convert.ToDouble(Hours)) / 4;
 
             return Math.Ceiling(astronauts);
+		}
 
+        public int GetHours()
+        {
+            return Hours;
+        }
+
+		public int GetTasks()
+		{
+			return Tasks;
 		}
     }
 

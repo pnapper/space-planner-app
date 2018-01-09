@@ -7,9 +7,10 @@
 <h2>Crew Requirements</h2>
 <hr>
 
+<h3>Number of Tasks: @Model.GetTasks()</h3>
+<h3>Number of Hours: @Model.GetHours()</h3>
+<hr>
 
-<p>Test</p>
-
-<h2>Crew Needed: @Model.GetAstronauts()</h2>
-
+<h2>Crew Needed: @Model.GetAstronauts() Astronauts</h2>
+<br>
 @Html.ActionLink("Back to List", "Index")
