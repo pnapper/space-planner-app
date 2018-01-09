@@ -1,0 +1,21 @@
+﻿@model SpacePlanner.Models.Crew
+
+@{
+    ViewData["Title"] = "Crew Requirements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Crew Requirements</h2>
+<hr>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Tasks)
+    @Html.EditorFor(model => model.Tasks)
+
+    @Html.LabelFor(model => model.Hours)
+    @Html.EditorFor(model => model.Hours)
+
+    <input type="submit" value="Create" class="btn btn-default" />
+}
+
+@Html.ActionLink("Back to List", "Index")

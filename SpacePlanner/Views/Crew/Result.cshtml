@@ -1,0 +1,15 @@
+﻿@model SpacePlanner.Models.Crew
+
+@{
+    ViewData["Title"] = "Crew Requirements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Crew Requirements</h2>
+<hr>
+
+
+<p>Test</p>
+
+<h2>Crew Needed: @Model.GetAstronauts()</h2>
+
+@Html.ActionLink("Back to List", "Index")
